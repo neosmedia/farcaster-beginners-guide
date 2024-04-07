@@ -26,8 +26,8 @@ app.frame('/', (c) => {
           alignItems: 'center',
           background:
             status === 'response'
-              ? 'linear-gradient(to right, #432889, #17101F)'
-              : 'black',
+              ? 'linear-gradient(to right, #432889, ##8A63D2)'
+              : '#8A63D2',
           backgroundSize: '100% 100%',
           display: 'flex',
           flexDirection: 'column',
@@ -52,15 +52,15 @@ app.frame('/', (c) => {
         >
           {status === 'response'
             ? `Nice choice.${fruit ? ` ${fruit.toUpperCase()}!!` : ''}`
-            : 'Welcome!'}
+            : 'Welcome to Farcaster'}
         </div>
       </div>
     ),
     intents: [
       <TextInput placeholder="Enter custom fruit..." />,
-      <Button value="apples">Apples</Button>,
-      <Button value="oranges">Oranges</Button>,
-      <Button value="bananas">Bananas</Button>,
+      <Button value="apples">About</Button>,
+      <Button value="oranges">Why</Button>,
+      <Button value="bananas">Get Started</Button>,
       status === 'response' && <Button.Reset>Reset</Button.Reset>,
     ],
   })
