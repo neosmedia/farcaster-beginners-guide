@@ -24,10 +24,7 @@ app.frame('/', (c) => {
       <div
         style={{
           alignItems: 'center',
-          background:
-            status === 'response'
-              ? 'linear-gradient(to right, #432889, ##8A63D2)'
-              : '#8A63D2',
+          background: '#8A63D2',
           backgroundSize: '100% 100%',
           display: 'flex',
           flexDirection: 'column',
@@ -57,10 +54,9 @@ app.frame('/', (c) => {
       </div>
     ),
     intents: [
-      <TextInput placeholder="Enter custom fruit..." />,
-      <Button value="apples">About</Button>,
-      <Button value="oranges">Why</Button>,
-      <Button value="bananas">Get Started</Button>,
+      <Button value="about">About</Button>,
+      <Button value="why">Why</Button>,
+      <Button value="start">Get Started</Button>,
       status === 'response' && <Button.Reset>Reset</Button.Reset>,
     ],
   })
