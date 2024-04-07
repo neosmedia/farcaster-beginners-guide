@@ -57,7 +57,7 @@ app.frame('/', (c) => {
       <Button value="about">About</Button>,
       <Button value="why">Why</Button>,
       <Button value="start">Get Started</Button>,
-      status === 'response' && <Button.Reset>Reset</Button.Reset>,
+      <Button value="resources">Resources</Button>,
     ],
   })
 })
